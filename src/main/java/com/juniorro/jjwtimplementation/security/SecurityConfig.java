@@ -16,7 +16,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
-	private static final String[] PUBLIC_MATCHERS = { "/user/login", "/user/newUser" };
+	private static final String[] PUBLIC_MATCHERS = { "/login", "/user/newUser" };
 	
 	@Autowired
 	private UserDetailsService userDetailsService;
