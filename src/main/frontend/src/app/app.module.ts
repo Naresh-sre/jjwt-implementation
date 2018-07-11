@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { routing } from './app.routing';
 import { LoginComponent } from './login/login.component';
 import { TaskComponent } from './task/task.component';
 
@@ -14,7 +15,8 @@ import { TaskComponent } from './task/task.component';
     TaskComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
